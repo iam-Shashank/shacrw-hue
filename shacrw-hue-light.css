@@ -1,0 +1,96 @@
+/*
+https://products.ls.graphics/mesh-gradients/
+https://products.ls.graphics/mesh-gradients/images/70.-Honeydew.jpg
+*/
+
+:root {
+--bg-url:url(
+https://products.ls.graphics/mesh-gradients/images/33.-Beauty-Bush.jpg
+);
+}
+/*body{
+  background-image: var(--bg-url) !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}*/
+.roam-sidebar-content{
+  background-image: var(--bg-url) !important;
+  background-size: cover !important;
+}
+.rm-embed-container{
+  background-image: var(--bg-url);
+  background-size: cover;
+  border-radius: 5px;
+}
+.roam-body::before {    
+  content: "";
+  background-image: var(--bg-url);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+/*.roam-article{
+ border: 5px solid #E9EBEF;	
+  margin:15px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.3); !important;
+  backdrop-filter: saturate(180%) blur(10px) !important;
+}*/
+
+/*the transparency value gets added after the main color HEX value 
+and before the previous transparency values*/
+#right-sidebar{
+  border: 5px solid #E9EBEF8E;	
+  margin:15px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.5); !important;
+  backdrop-filter: saturate(180%) blur(10px) !important;
+/*box-shadow:  -5px -5px 5px #b4b6b7, 
+             5px 5px 5px #ffffff;*/
+}
+
+.roam-topbar{
+  background:none;
+}
+/* Custom data tags */
+span.rm-page-ref-tag {
+  	border-radius:25px;
+    border:1.5px inset #00000030;
+    color: rgb(140,140,140) !important;
+    padding: 1px 5px;
+    margin: 0px 1px;
+    font-weight: 500;
+}
+
+span.rm-page-ref-tag:hover {
+  	border-radius:25px;
+    border:1.5px inset #00000080;
+    text-decoration:none;
+    color: rgb(53,53,53) !important;
+    padding: 1px 5px;
+    font-weight: 500;
+}
+/*background:linear-gradient(135deg, #F36265 0%,#961276 100%);
+*/
+span.rm-page-ref[data-tag="Shacrw"] {
+background:linear-gradient(135deg, #57ca85 0%,#184e68 100%);  
+border-radius:5px;
+color: white !important;
+padding: 3px 7px;
+line-height: 2em;
+font-weight: 500;
+}
+
+
+span.rm-page-ref[data-tag="Shacrw/Writing"] {
+background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+border-radius:5px;
+color: white !important;
+padding: 3px 7px;
+line-height: 2em;
+font-weight: 500;
+}
